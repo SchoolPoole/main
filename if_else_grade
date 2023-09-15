@@ -1,0 +1,25 @@
+def main():
+    num = getScore()
+    isScore(num)
+
+def getScore():
+    getScore = int(input("What score did you get:"))
+    return getScore
+
+def isScore(num):
+    if (num < 60):
+        print("Your grade is a F")
+    else:
+        if (num >= 60) and (num <70):
+            print("Your grade is a D")
+        else:
+            if (num >= 70) and (num < 80):
+                print("Your grade is a C")
+            else:
+                if (num >= 80) and (num < 90):
+                    print("Your grade is a B")
+                else:
+                    if (num >= 90):
+                        print("Your grade is a A")
+                    
+main()
