@@ -1,0 +1,12 @@
+def main():
+    amount1 = float(input("Enter amount 1:"))
+    amount2 = float(input("Enter amount 2:"))
+    totalAmount(amount1, amount2)
+    
+def totalAmount(amount1, amount2):
+    if (amount1 > 10) and (amount2 < 100):
+        while amount1 > amount2:
+            print("Greater Amount:",amount1)
+        else:
+            print("Greater Amount:",amount2)
+main()
