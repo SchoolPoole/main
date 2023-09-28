@@ -18,6 +18,6 @@ def retail():
         wholesale = float(input('Enter the correct wholesale cost: $'))
 
     retail = wholesale * markUp
-    print('The retail price is $', retail, '.2f')
+    print('The retail price is $', format(retail, '.2f'))
 
 main()
