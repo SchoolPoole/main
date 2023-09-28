@@ -1,0 +1,23 @@
+# Declare constant
+markUp=2.5
+
+#main function
+def main():
+    another = 'y'
+
+    while another =='y' or another=='Y':
+        retail()
+
+        another = input('Do you have another? ' + 'Enter y for yes: ')
+
+def retail():
+    wholesale = float(input("Enter the item's wholesale cost: "))
+
+    while wholesale < 0:
+        print('ERROR: the cost cannot be negative.')
+        wholesale = float(input('Enter the correct wholesale cost: $'))
+
+    retail = wholesale * markUp
+    print('The retail price is $', retail, '.2f')
+
+main()
