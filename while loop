@@ -1,0 +1,6 @@
+product = 0
+
+while product < 100:
+    duc = int(input("Enter a number: "))
+    product = duc * 10
+    print("Product:", product)
