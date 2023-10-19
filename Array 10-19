@@ -12,4 +12,4 @@ while count < 6:
 for i in sales:
     total = total + i
     
-print(total)
+print('${:,.2f}'.format(total))
