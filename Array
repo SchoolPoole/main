@@ -1,0 +1,15 @@
+//Create an array to hold the sales for six days
+
+count = 0
+total = 0
+sales = []
+while count < 6:
+    newSale = float(input("Enter sales for the day: "))
+    sales.append(newSale)
+    print(sales)
+    count += 1
+    
+for i in sales:
+    total = total + i
+    
+print(total)
