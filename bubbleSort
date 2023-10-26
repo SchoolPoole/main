@@ -1,0 +1,23 @@
+def bubbleSort(wavy):
+    n = len(wavy)
+    swapped = False
+    for i in range (n-1):
+
+        for j in range(0, n-i-1):
+        
+            if wavy[j] > wavy[j+1]:
+                swapped = True
+                wavy[j], wavy[j+1] = wavy[j+1], wavy[j]
+                
+    if not swapped:
+        ## if we havent  needed to make a single swap, we can exit the loop
+        return
+
+wavy = [70, 20, 30, 80, 90, 10, 34]
+
+
+bubbleSort(wavy)
+
+print("Sorted array is:")
+for i in range(len(wavy)):
+    print("% d" % wavy[i], end=" ")
