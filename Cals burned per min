@@ -1,0 +1,7 @@
+
+cals1M = 3.9
+calsBurnedSoFar = 0
+
+for minutes in range(10, 31, 5):
+    calsSoFar = cals1M * minutes
+    print("You will  burn", calsSoFar,"in", minutes,"minutes")
