@@ -1,0 +1,14 @@
+# Get five random numbers to get and add them to the array 
+arr = []
+import random
+for index in range(5):
+    number = random.randint(0, 100)
+    arr.append(number)
+print(arr)
+print("The first number in the arry is:", arr[0])
+
+#Get one more number and add it to the array
+print("Add 1 more number")
+new = random.randint(0, 100)
+arr.append(new)
+print(arr)
