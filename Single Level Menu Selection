@@ -1,0 +1,28 @@
+# Display the menu
+print('--Main Menu--')
+print('1. Option One')
+print('2. Option Two')
+print('3. Option Three')
+print('4. End Program')
+print()
+
+# Getting user selection
+menu_selection = int(input('Enter your selection: '))
+
+# Validating selection; change numbers to fit option amount
+while menu_selection < 1 or menu_selection > 4:
+    print('That is an invalid selection.')
+    menu_selection = int(input('Enter your selection: '))
+    
+#Performing selected operation
+if menu_selection == 1:
+    statements
+    
+elif menu_selection == 2:
+    statements
+    
+elif menu_selection == 3:
+    statements
+
+elif menu_selection == 4:
+    statements
